@@ -1,0 +1,82 @@
+(# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+.python-version
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Jupyter
+.ipynb_checkpoints
+
+# Streamlit
+.streamlit/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+
+# Model artifacts & large binaries (do not commit large model files)
+models/
+artifacts/
+outputs/
+saved_models/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.onnx
+
+# Common data directories (ignore if you keep datasets separate)
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Secrets and config
+.env
+.env.*
+secrets.*
+credentials.json
+config/*.secret
+
+# Misc
+*.pyc
+wheelhouse/
+
+# Cache
+.cache/
