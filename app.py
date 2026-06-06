@@ -279,7 +279,7 @@ with tab_finder:
         st.markdown('<p style="color:#6B7280;font-size:.85rem;margin-bottom:1rem">Nilai kemampuan coding kamu (1 = Weak, 2 = Average, 3 = Strong)</p>', unsafe_allow_html=True)
 
         for skill in ['Python','SQL','Java']:
-            st.markdown(f'<div class="slider-q">{'🐍' if skill=="Python" else '🗄️' if skill=="SQL" else '☕'} {skill} Skill</div>', unsafe_allow_html=True)
+            st.markdown(f'<div class="slider-q">{"🐍" if skill=="Python" else "🗄️" if skill=="SQL" else "☕"} {skill} Skill</div>', unsafe_allow_html=True)
             val = st.select_slider(skill, options=[1,2,3],
                 value=st.session_state.answers[skill],
                 format_func=lambda x: SKILL_MAP_INV[x],
